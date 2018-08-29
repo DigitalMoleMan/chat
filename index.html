@@ -1,0 +1,46 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
+  <!-- Material Design Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Socket.io -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <div id="pagename">chat</div>
+      <div id="subname">.dimo.one</div>
+    </div>
+  </header>
+
+  <main>
+
+    
+
+    <div id="contentArea">
+      <div id="card" class="card">
+        <span id="messagePoster" class="posterName">Server</span>
+        <span id="messageContent" class="messageContent">Connecting</span>
+      </div>
+    </div>
+
+    <div id="inputArea">
+        <input id="nameInput" placeholder="Name">
+        <input id="messageInput" placeholder="Message">
+  
+        <button id="submitButton" onclick="submit(document.getElementById('messageInput').value, document.getElementById('nameInput').value);">
+          <i class="material-icons">send</i>
+        </button>
+      </div>
+
+  </main>
+
+  <script type="text/javascript" src="code.js"></script>
+</body>
+
+</html>
