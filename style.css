@@ -99,7 +99,7 @@ header {
     animation: domIn 10s ease-in-out;
 }
 
-@keyframes domIn {
+@keyframes subIn {
     0% {
         bottom: 2em;
     }
@@ -117,68 +117,45 @@ header {
     }
 }
 
-#inputArea {
+#nameArea {
     position: relative;
     display: block;
     margin: 0 auto;
-    top: 1em;
-    width: 30em;
-    height: 8em;
-    background-color: #303030;
-    border-radius: 5px;
+    bottom: 0em;
+    width: 28em;
+    height: 2em;
+    font-size: 1em;
+    line-height: .5em;
+    color: #fff;
 }
 
 #nameInput {
     position: relative;
-    margin: 1em;
-    padding: 1em;
-    width: 100%;
-    max-width: 34em;
-    height: 3em;
-    box-shadow: inset 0px 1px 1px 0px #00000080;
-    border-style: none;
-    border-radius: 5px;
-}
-
-#messageInput {
-    position: relative;
-    float: left;
-    margin-left: 1em;
-    padding: 1em;
-    width: 100%;
-    max-width: 30em;
-    height: 3em;
-    resize: vertical;
-    overflow: auto;
-    box-shadow: inset 0px 1px 1px 0px #00000080;
-    border-style: none;
-    border-radius: 5px;
-}
-
-#submitButton {
-    position: relative;
     display: block;
-    float: right;
-    margin-right: 1em;
-    width: 3em;
-    height: 3em;
-    box-shadow: 0px 1px 1px 0px #00000080;
-    background-color: #606060;
+    padding: 1em;
+    bottom: 1em;
+    width: 50%;
+    max-width: 30em;
+    height: 2em;
+    background-color: #202020;
     border-style: none;
-    border-radius: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #404040;
+    border-radius: 0px;
+    font-size: 1em;
+    font-weight: bold;
     color: #fff;
-    transition: .1s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
-#submitButton:hover {
-    background-color: #707070;
-    box-shadow: 0px 1px 1px 0px #00000080;
-}
-
-#submitButton:active {
-    background-color: #404040;
-    box-shadow: 0px 0px 0px 0px #00000080;
+#nameInput:focus {
+    width: 100%;
+    box-shadow: inset 0px 1px 1px 0px #00000080;
+    background-color: #fff;
+    border-bottom-color: #202020;
+    border-radius: 5px;
+    color: #000;
 }
 
 #contentArea {
@@ -189,6 +166,7 @@ header {
     min-height: 5em;
     max-height: 30em;
     background-color: #303030;
+    overflow-x: hidden;
     overflow-y: scroll;
     border-radius: 5px;
     color: #fff;
@@ -201,6 +179,7 @@ header {
     padding: .5em;
     box-shadow: 0px 1px 1px #00000080;
     background-color: #404040;
+    overflow-x: hidden;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     color: #fff;
@@ -224,4 +203,56 @@ header {
     margin: .25em;
     font-size: .9em;
     color: #c0c0c0;
+}
+
+#inputArea {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 0em;
+    width: 30em;
+    height: 8em;
+    border-radius: 5px;
+}
+
+#messageInput {
+    position: relative;
+    float: left;
+    margin: 1em;
+    padding: 1em;
+    width: 100%;
+    max-width: 30em;
+    height: 3em;
+    resize: vertical;
+    overflow: auto;
+    box-shadow: inset 0px 1px 1px 0px #00000080;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#submitButton {
+    position: relative;
+    display: block;
+    float: right;
+    margin: 1em;
+    margin-left: 0em;
+    width: 3em;
+    height: 3em;
+    box-shadow: 0px 1px 1px 0px #00000080;
+    background-color: #606060;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    transition: .1s ease-in-out;
+}
+
+#submitButton:hover {
+    background-color: #707070;
+    box-shadow: 0px 1px 1px 0px #00000080;
+}
+
+#submitButton:active {
+    background-color: #404040;
+    box-shadow: 0px 0px 0px 0px #00000080;
 }

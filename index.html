@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
   <!-- Material Design Icons-->
@@ -11,6 +12,7 @@
 </head>
 
 <body>
+
   <header>
     <div id="logo">
       <div id="pagename">chat</div>
@@ -20,7 +22,9 @@
 
   <main>
 
-    
+    <div id="nameArea">
+      <input id="nameInput" placeholder="Name">
+    </div>
 
     <div id="contentArea">
       <div id="card" class="card">
@@ -30,13 +34,10 @@
     </div>
 
     <div id="inputArea">
-        <input id="nameInput" placeholder="Name">
-        <input id="messageInput" placeholder="Message">
-  
-        <button id="submitButton" onclick="submit(document.getElementById('messageInput').value, document.getElementById('nameInput').value);">
-          <i class="material-icons">send</i>
-        </button>
-      </div>
+      <input id="messageInput" placeholder="Message">
+      <button id="submitButton" onclick="submit(document.getElementById('messageInput').value, document.getElementById('nameInput').value);"><i
+          class="material-icons">send</i></button>
+    </div>
 
   </main>
 
